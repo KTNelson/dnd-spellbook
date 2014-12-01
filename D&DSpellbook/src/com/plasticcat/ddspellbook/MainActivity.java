@@ -8,6 +8,8 @@ import org.json.JSONObject;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
@@ -30,11 +32,9 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 		
-		TextView nameView = (TextView)findViewById(R.id.spellName);
-		nameView.setText(testBook.getSpell(0).getName());
+		ViewGroup parentView = (ViewGroup)findViewById(R.id.main_window);
+		SpellView newView = new SpellView(getApplicationContext(), testBook.getSpell(0), parentView);
 		
-		TextView descView = (TextView)findViewById(R.id.spellDesc);
-		descView.setText(testBook.getSpell(0).getDesc());
 	}
 
 
