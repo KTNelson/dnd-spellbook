@@ -3,23 +3,81 @@
     android:layout_height="fill_parent" >
 
     <TextView
+        android:id="@+id/spellRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spellName"
+        android:layout_below="@+id/spellName"
+        android:layout_marginTop="18dp"
+        android:textColor="#111"
+        android:text="range" />
+
+    <TextView
+        android:id="@+id/spellType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spellName"
+        android:layout_below="@+id/spellName"
+        android:textColor="#111"
+        android:text="type" />
+
+    <TextView
+        android:id="@+id/SpellCastTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spellName"
+        android:layout_below="@+id/spellRange"
+        android:textColor="#111"
+        android:text="castTime" />
+
+    <TextView
         android:id="@+id/spellName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp"
-        android:textColor="#111"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_marginTop="46dp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#111" />
 
     <TextView
         android:id="@+id/spellDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/SpellCastTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:padding="10dp"
+        android:text="Description"
+        android:textColor="#111" />
+
+    <TextView
+        android:id="@+id/spellComponents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/spellName"
-        android:layout_alignRight="@+id/spellName"
-        android:layout_below="@+id/spellName"
+        android:layout_below="@+id/SpellCastTime"
+        android:layout_marginTop="15dp"
         android:textColor="#111"
-        android:layout_marginTop="100dp" />
+        android:text="components" />
+
+    <TextView
+        android:id="@+id/spellDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spellName"
+        android:layout_below="@+id/spellComponents"
+        android:textColor="#111"
+        android:text="duration" />
+
+    <TextView
+        android:id="@+id/spellHigherLevelMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spellDesc"
+        android:layout_below="@+id/spellDesc"
+        android:textColor="#111"
+        android:text="higherLevelMod" />
 
 </RelativeLayout>

@@ -25,15 +25,13 @@ public class SpellBook {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		for(Spell spell : mSpells){
-			spell.printDetails();
-		}
-		
 	}
 	
 	public Spell getSpell(int index){
 		return mSpells.get(index);
+	}
+	public int getSize(){
+		return mSpells.size();
 	}
 
 }

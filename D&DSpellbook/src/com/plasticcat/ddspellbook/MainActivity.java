@@ -24,17 +24,18 @@ public class MainActivity extends Activity {
 		
 		try {
 			JSONObject data = new JSONObject(loadJSONFromAsset());
-			
 			testBook.createFromJson(data);			
 			
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		ViewGroup parentView = (ViewGroup)findViewById(R.id.scrollLayout);
 		
-		ViewGroup parentView = (ViewGroup)findViewById(R.id.main_window);
-		SpellView newView = new SpellView(getApplicationContext(), testBook.getSpell(0), parentView);
-		
+		for(int i = 0; i < testBook.getSize(); i++){
+			SpellView newView = new SpellView(getApplicationContext(), testBook.getSpell(i), parentView);
+			parentView.addView(newView.getView());
+		}
 	}
 
 
