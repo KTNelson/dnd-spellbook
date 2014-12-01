@@ -1,0 +1,13 @@
+{
+	"Spells":
+	[	
+		{
+			"name": "testName",
+			"desc": "test Desc"
+		},
+		{
+			"name": "testName2",
+			"desc": "test Desc2"
+		}
+	]
+}
