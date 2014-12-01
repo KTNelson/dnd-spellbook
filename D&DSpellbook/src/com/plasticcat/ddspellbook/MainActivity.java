@@ -8,24 +8,33 @@ import org.json.JSONObject;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-
+	private SpellBook testBook;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+		testBook = new SpellBook();
+		
 		try {
 			JSONObject data = new JSONObject(loadJSONFromAsset());
-			SpellBook testBook = new SpellBook();
+			
 			testBook.createFromJson(data);			
 			
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		TextView nameView = (TextView)findViewById(R.id.spellName);
+		nameView.setText(testBook.getSpell(0).getName());
+		
+		TextView descView = (TextView)findViewById(R.id.spellDesc);
+		descView.setText(testBook.getSpell(0).getDesc());
 	}
 
 

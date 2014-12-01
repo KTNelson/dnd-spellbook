@@ -31,5 +31,9 @@ public class SpellBook {
 		}
 		
 	}
+	
+	public Spell getSpell(int index){
+		return mSpells.get(index);
+	}
 
 }

@@ -26,5 +26,8 @@ public class Spell {
 	public String getName(){
 		return mName;
 	}
+	public String getDesc(){
+		return mDesc;
+	}
 
 }
