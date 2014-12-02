@@ -2,14 +2,34 @@
 	"Spells":
 	[	
 		{
-			"name": "Dissonant Whispers",
-			"type": "1st-level enchantement",
+			"name": "Vicious Mockery",
+			"type": "Enchantement cantrip",
 			"castTime": "1 action",
 			"range": "60 feet",
 			"components": "V",
 			"duration": "Instantaneous", 
-			"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.",
-			"higherLevelMod": "When you cast this at higher levels..."
+			"desc": "You unleah a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next turn.",
+			"higherLevelMod": "Damage increases by 1d4 at levels 5, 11 and 17"
+		},
+		{
+			"name": "Message",
+			"type": "Transmutation cantrip",
+			"castTime": "1 action",
+			"range": "120 feet",
+			"components": "V, S, M",
+			"duration": "1 Round", 
+			"desc": "You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear. You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel freely around corners or through openings.",
+			"higherLevelMod": ""
+		},
+		{
+			"name": "Tasha's Hideous Laughter",
+			"type": "1st-level enchantement",
+			"castTime": "1 action",
+			"range": "30 feet",
+			"components": "V, S, M",
+			"duration": "Concentration, up to 1 minute", 
+			"desc": "A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell takes effect. The target must succeed on a Wisdom saving throw or fall prone, becoming incapacitated and unable to stand for the duration. A creature with an Intelligence score of 4 or below isn't affected. At the end of each of it's turns, and each time it takes damage, the target can make anotehr Wisdom saving throw. The target has advantage on the saving throw if it's triggered by damage. On success, the spell ends.",
+			"higherLevelMod": ""
 		},
 		{
 			"name": "Dissonant Whispers",
@@ -17,49 +37,29 @@
 			"castTime": "1 action",
 			"range": "60 feet",
 			"components": "V",
-			"duration": "Instantaneous", 
-			"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.",
-			"higherLevelMod": "When you cast this at higher levels..."
+			"duration": "Instantaneous",
+			"desc": "You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save, it takes 3d6 psychic damage and must immediately use it's reaction, if available, to move as far away as it's speed allows from you. The creature doesn't move into obviously dangerous ground, such as fire or a pit. On a successful save, the target takes half as much damage and doesn't have to move away. A defeaned creature automatically succeeeds on the save.", 
+			"higherLevelMod": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each level above 1st."
 		},
 		{
-			"name": "Dissonant Whispers",
+			"name": "Charm Person",
 			"type": "1st-level enchantement",
 			"castTime": "1 action",
+			"range": "30 feet",
+			"components": "V, S",
+			"duration": "1 Hour", 
+			"desc": "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you nutil the spell ends or until you or a companion do anything harmful to it. The charmed creature regards you as a friendly aquaintance. When the spell ends, the creature knows it was charmed by you.",
+			"higherLevelMod": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot above 1st. The creatures must be within 30ft of each otehr when you target them."
+		},
+		{
+			"name": "Healing Word",
+			"type": "1st-level evocation",
+			"castTime": "1 bonus action",
 			"range": "60 feet",
 			"components": "V",
 			"duration": "Instantaneous", 
-			"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.",
-			"higherLevelMod": "When you cast this at higher levels..."
-		},
-		{
-			"name": "Dissonant Whispers",
-			"type": "1st-level enchantement",
-			"castTime": "1 action",
-			"range": "60 feet",
-			"components": "V",
-			"duration": "Instantaneous", 
-			"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.",
-			"higherLevelMod": "When you cast this at higher levels..."
-		},
-		{
-			"name": "Dissonant Whispers",
-			"type": "1st-level enchantement",
-			"castTime": "1 action",
-			"range": "60 feet",
-			"components": "V",
-			"duration": "Instantaneous", 
-			"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.",
-			"higherLevelMod": "When you cast this at higher levels..."
-		},
-		{
-			"name": "Dissonant Whispers",
-			"type": "1st-level enchantement",
-			"castTime": "1 action",
-			"range": "60 feet",
-			"components": "V",
-			"duration": "Instantaneous", 
-			"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.",
-			"higherLevelMod": "When you cast this at higher levels..."
+			"desc": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+			"higherLevelMod": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st."
 		}
 	]
 }
