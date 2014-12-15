@@ -8,7 +8,10 @@ import org.json.JSONObject;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -30,12 +33,23 @@ public class MainActivity extends Activity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		ViewGroup parentView = (ViewGroup)findViewById(R.id.scrollLayout);
+
 		
-		for(int i = 0; i < testBook.getSize(); i++){
-			SpellView newView = new SpellView(getApplicationContext(), testBook.getSpell(i), parentView);
-			parentView.addView(newView.getView());
-		}
+		Button button = (Button)findViewById(R.id.viewSpells);
+		button.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				ViewGroup parentView = (ViewGroup)findViewById(R.id.scrollLayout);
+				
+				for(int i = 0; i < testBook.getSize(); i++){
+					SpellView newView = new SpellView(getApplicationContext(), testBook.getSpell(i), parentView);
+					parentView.addView(newView.getView());
+				}
+				
+			}
+			
+		});
 	}
 
 

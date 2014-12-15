@@ -21,4 +21,13 @@
         </LinearLayout>
     </ScrollView>
 
+    <Button
+        android:id="@+id/viewSpells"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:text="viewSpells" />
+
 </RelativeLayout>
